@@ -1,0 +1,16 @@
+{
+  "skipTerminateQuickPick": true,
+  "skipSwitchToOutput": false,
+  "skipErrorMessage": true,
+  "commands": [
+    {
+      "text": "start server",
+      "tooltip": "Start",
+      "color": "white",
+      "command": "cd server && npm run start",
+      "alignment": "left",
+      "skipTerminateQuickPick": false,
+      "priority": 0
+    }
+  ]
+}
