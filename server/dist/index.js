@@ -14,9 +14,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = express_1.default();
 const port = 8080;
+const numbers_1 = __importDefault(require("./numbers"));
 const weather_1 = __importDefault(require("./weather"));
 app.get("/weather", (req, res) => __awaiter(this, void 0, void 0, function* () {
-    yield res.json(yield weather_1.default());
+    return res.json(yield weather_1.default());
+}));
+app.get("/arabic", (req, res) => __awaiter(this, void 0, void 0, function* () {
+    const num = req.query.number + "";
+    if (!req.query.number) {
+        return res.json({ ok: false });
+    }
+    res.json({ result: numbers_1.default(num), ok: true });
 }));
 app.listen(port, () => {
     console.log(`server started at http://localhost:${port}`);

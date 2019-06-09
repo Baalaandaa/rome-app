@@ -8,7 +8,7 @@ class Weather {
     static create(resp) {
         return {
             condition: resp.current.condition.text,
-            feelslike: resp.current.feelslike,
+            feelslike: resp.current.feelslike_c,
             humidity: resp.current.humidity,
             temp: resp.current.temp_c
         };
