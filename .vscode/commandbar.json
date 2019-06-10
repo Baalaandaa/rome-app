@@ -11,6 +11,13 @@
       "alignment": "left",
       "skipTerminateQuickPick": false,
       "priority": 0
+    },
+    {
+        "text": "rn run-anroid",
+        "tooltip": "android",
+        "color": "white",
+        "command": "PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/baalaandaa/Library/Android/tools:/Users/baalaandaa/Library/Android/platform-tools:/Users/baalaandaa/Library/Android/sdk/tools:/Users/baalaandaa/Library/Android/sdk/platform-tools && ANDROID_HOME=/Users/baalaandaa/Library/Android/sdk && cd rome_app && react-native run-android",
+        "alignment": "left"
     }
   ]
 }
